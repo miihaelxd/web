@@ -1,0 +1,5 @@
+- Sivu sisältö
+- index=Seuraava ottelu heti alussa
+- about=Seura, joukkueet, vapaaehtoisuus, harjoitusajat
+- listing=Koko otteluohjelma ja menneet tulokset
+- contact=Miten mukaan pääsee + ilmoittautuminen kokeiluun
