@@ -1,3 +1,31 @@
 body {
-    background-color: rgb(12, 12, 12);
+    background-color: #f7f3e8;
+    color: #1f3d2b;
+    font-family: Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 1rem;
+}
+
+h1 {
+    border-bottom: 4px solid #c8902e;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: #1f3d2b;
+    display: block;
+    padding: 0.75rem 0;
+    font-weight: bold;
+}
+
+a:hover,
+a:focus {
+    color: #c8902e;
 }
