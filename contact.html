@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilmoittautuminen</title>
+    <title>Ilmoittautuminen - Lapuan Lepakot ry</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Ilmoittautuminen</h1>
-    <p>Tämä on ilmoittautumissivu.</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kotivalikko</a></li>
+            <li><a href="about.html">Tietoa seurasta</a></li>
+            <li><a href="contact.html">Ilmoittautuminen</a></li>
+            <li><a href="listing.html">Otteluohjelma</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Tule kokeilemaan salibandya ilmaiseen kokeiluharjoitukseen! Täytä lomake, niin seura ottaa yhteyttä.</p>
+
+        <form id="signup-form" novalidate>
+            <label for="name">Pelaajan nimi</label>
+            <input type="text" id="name" name="name">
+            <div class="error" id="name-error" aria-live="polite"></div>
+
+            <label for="email">Sähköposti</label>
+            <input type="email" id="email" name="email">
+            <div class="error" id="email-error" aria-live="polite"></div>
+
+            <label for="team">Joukkue</label>
+            <select id="team" name="team">
+                <option value="">Valitse joukkue</option>
+                <option value="juniorit">Juniorit</option>
+                <option value="miehet">Miehet</option>
+                <option value="naiset">Naiset</option>
+            </select>
+            <div class="error" id="team-error" aria-live="polite"></div>
+
+            <button type="submit">Ilmoittaudu kokeiluun</button>
+        </form>
+
+        <p id="success" class="success hidden" aria-live="polite">
+            Kiitos! Ilmoittautumisesi on valmis. Seura ottaa sinuun yhteyttä.
+        </p>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
